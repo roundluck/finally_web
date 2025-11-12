@@ -1,0 +1,149 @@
+Verdana
+Arial
+Garamond
+Wingdings
+Calibri
+Times New Roman
+___PPT10
+Rectangle 2
+Rectangle 3
+Rectangle 7
+___PPT9
+Line 8
+Rectangle 9
+___PPT9
+___PPT10
+Level
+___PPT9
+Rectangle 5
+___PPT9
+Date Placeholder 2
+Notes Placeholder 4
+___PPT9
+___PPT10
+___PPT9
+Rectangle 3
+___PPT9
+Rectangle 4
+___PPT9
+Rectangle 5
+Rectangle 2
+Rectangle 3
+___PPT10
+Rectangle 3
+The objective of this course is to give the students an insight of the Enterprise application development 
+ by means of learning new framework and to do coding & deployment of applications.
+
+At the end of course, you will be able to:
+Understand the significance of enterprise application development.
+Appreciate the fundamentals of Enterprise Architecture and development frameworks.
+Learn how to develop, deploy and test enterprise applications 
+___PPT10
+Rectangle 3
+Rectangle 2
+Rectangle 2
+Rectangle 3
+There won
+t be any examination at the end of semester as the assessment mode would be 
+coursework-based
+.
+
+The CA topics and the weightage are given in the table below:
+
+
+
+Table 1
+___PPT9
+___PPT9
+___PPT9
+Group Assignment 
+___PPT9
+___PPT9
+___PPT9
+Rectangle 2
+CA 
+ Group Projects
+Rectangle 3
+___PPT9
+Rectangle 2
+CA 
+ Group Projects
+Rectangle 3
+___PPT9
+___PPT10
+___PPT9
+Picture 1
+___PPT10
+___PPT10
+___PPT9
+Deliverables:
+
+Live demonstration to the class (5-10 mins) 
+ only for individual assignment.
+
+The following are required to be submitted:
+Functional document 
+ listing all the user functions developed in the application
+Technical document
+ describing the architecture of the application, class diagrams, entity-relationship diagrams and any other technical aspects that the student wishes to describe.
+Database dump
+Source code
+
+All the above-described deliverables should be uploaded to a discussion thread in NTU Learn website.
+___PPT10
+___PPT9
+Rectangle 2
+___PPT10
+Rectangle 3
+___PPT9
+
+I am not able to complete the assignment within the due date. What should I do?
+Inform the lecturer when you have issues in meeting deadlines or if you have any queries with regards to the assignment or course work.
+
+I have issues in my code!
+While you may ask for methodology or ways to solve issues, please do not ask the lecturer to debug the code.
+
+Take note that the class is always going to have a mixture of experienced people and beginners. As such, attention will be given to every student, as much as possible, to ensure that the lab exercise are followed.
+Be a class buddy! Help your friends 
+___PPT10
+Rectangle 3
+___PPT9
+Picture 2
+___PPT10
+Slide Image Placeholder 1
+Notes Placeholder 2
+Slide Number Placeholder 3
+___PPT10
+Slide Image Placeholder 1
+Notes Placeholder 2
+Slide Number Placeholder 3
+___PPT10
+Slide Image Placeholder 1
+Notes Placeholder 2
+Slide Number Placeholder 3
+___PPT10
+Slide Image Placeholder 1
+Notes Placeholder 2
+Slide Number Placeholder 3
+___PPT10
+Slide Image Placeholder 1
+Notes Placeholder 2
+Slide Number Placeholder 3
+___PPT10
+Slide Image Placeholder 1
+Notes Placeholder 2
+Slide Number Placeholder 3
+___PPT10
+Slide Image Placeholder 1
+Notes Placeholder 2
+Slide Number Placeholder 3
+___PPT10
+Slide Image Placeholder 1
+Notes Placeholder 2
+Slide Number Placeholder 3
+Root Entry
+Pictures
+Current User
+SummaryInformation
+PowerPoint Document
+DocumentSummaryInformation
