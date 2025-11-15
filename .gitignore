@@ -13,3 +13,6 @@
 # Frontend dependencies and build
 /frontend/node_modules/
 /frontend/dist/
+.tools/
+node-v20.19.0-darwin-x64.tar.xz
+.npm-cache/

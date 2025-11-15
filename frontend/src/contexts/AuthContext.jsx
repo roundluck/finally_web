@@ -1,7 +1,6 @@
-import { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { apiClient } from '../api/client';
-
-const AuthContext = createContext(null);
+import { AuthContext } from './AuthContext.js';
 const TOKEN_KEY = 'dorm-maintenance-token';
 
 export const AuthProvider = ({ children }) => {
@@ -12,24 +11,32 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     if (!token) {
-      setProfile(null);
-      setLoading(false);
       return;
     }
-    setLoading(true);
+    let active = true;
     apiClient
       .profile(token)
       .then((data) => {
+        if (!active) return;
         setProfile(data);
         setError(null);
       })
       .catch((err) => {
         console.error(err);
+        if (!active) return;
+        setError(err.message);
         setProfile(null);
         setToken(null);
         localStorage.removeItem(TOKEN_KEY);
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        if (active) {
+          setLoading(false);
+        }
+      });
+    return () => {
+      active = false;
+    };
   }, [token]);
 
   const login = async (username, password) => {
@@ -38,12 +45,16 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem(TOKEN_KEY, auth.token);
     const data = await apiClient.profile(auth.token);
     setProfile(data);
+    setError(null);
+    setLoading(false);
     return data;
   };
 
   const logout = () => {
     setToken(null);
     setProfile(null);
+    setError(null);
+    setLoading(false);
     localStorage.removeItem(TOKEN_KEY);
   };
 
@@ -53,12 +64,4 @@ export const AuthProvider = ({ children }) => {
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
-};
-
-export const useAuth = () => {
-  const ctx = useContext(AuthContext);
-  if (!ctx) {
-    throw new Error('useAuth must be used inside AuthProvider');
-  }
-  return ctx;
 };

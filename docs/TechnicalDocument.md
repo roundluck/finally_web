@@ -70,7 +70,8 @@ All responses are JSON `*Response` DTOs described in `edu.ntu.maintenance.dto` p
 
 ## 8. Operations & Monitoring
 - Structured logs via Spring Boot (log level overrides for Hibernate & Security).
-- Ready for Spring Boot Actuator if needed (`/actuator` GET permitted by default).
+- Spring Boot Actuator enabled – `/actuator/health` is exposed publicly for smoke checks, other endpoints require auth.
+- Docker Compose (`docker-compose.yml`) wires MySQL 8, the packaged backend container, and the static frontend served by Nginx for one-command demos.
 - Seed data via `DataSeeder` for demo users/requests.
 
 ## 9. Known Limitations
@@ -83,3 +84,14 @@ All responses are JSON `*Response` DTOs described in `edu.ntu.maintenance.dto` p
 - WebSocket push for live status updates.
 - Technician mobile PWA with offline cache.
 - Automated reminders when requests remain in NEW/ASSIGNED beyond SLA threshold.
+
+## 11. Deployment Diagram
+
+```
+[Browser] <--> [Nginx container :4173 serving Vite build]
+                  |
+                  v
+             [Spring Boot API container :8080] --JPA--> [MySQL container]
+             |-- Actuator /health for probes
+             |-- JWT-secured /api/**
+```

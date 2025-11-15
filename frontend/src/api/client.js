@@ -23,7 +23,8 @@ async function apiFetch(path, { method = 'GET', body, token, query } = {}) {
     try {
       const payload = await response.json();
       message = payload.message || payload.error || message;
-    } catch (_) {
+    } catch (parseError) {
+      console.error('Failed to parse error response', parseError);
       const text = await response.text();
       if (text) {
         message = text;

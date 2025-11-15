@@ -32,10 +32,19 @@ app:
     secret: OgJRiGwwVrOH3OZlzJaSTjzrkVgyxCrI2zTXC6XjCJdkVPMI3tbvHcFgr3WY4t3g
     expiration-minutes: 180
   cors:
-    allowed-origins: http://localhost:5173
+    allowed-origins: http://localhost:5173,http://localhost:4173
 
 springdoc:
   api-docs:
     path: /api/docs
   swagger-ui:
     path: /swagger-ui
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when_authorized
